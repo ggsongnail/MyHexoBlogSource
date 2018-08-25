@@ -1,0 +1,40 @@
+# Site
+title: Hello-果果
+subtitle:
+description:
+keywords:
+author: songnail
+language:
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://www.songnail.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Writing
+post_asset_folder: true
+
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
+
+# Extensions
+theme:  cyanstyle
+baidu_push: true
+
+baidu_url_submit:
+  count: 20 # 提交最新的一个链接
+  host: www.songnail.com # 在百度站长平台中注册的域名
+  token: 5FrzOzL53sGOyUSk # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:ggsongnail/songgnim.github.io.git
+  branch: master
