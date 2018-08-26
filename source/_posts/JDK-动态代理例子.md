@@ -249,3 +249,5 @@ public class TestJdkProxy {
         });
     }
 ```
+
+这样我们就可以依靠jdk给在程序运行期间提供的Proxy.newProxyInstance来生成对应的代理类，而无需手写像EnhanceSingerV2那样的代理类，可以说十分方便。
