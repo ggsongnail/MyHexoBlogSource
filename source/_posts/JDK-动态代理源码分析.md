@@ -1,5 +1,5 @@
 ---
-title: JDK 动态代理源码分析
+title: JDK 动态代理例子
 date: 2018-08-25 20:28:04
 tags: JAVA
 ---
@@ -11,7 +11,7 @@ tags: JAVA
 ```java
 public class StarSinger {
     public void sing(){
-        System.out.println("动情歌唱一曲");
+        System.out.println("明星在发布会动情歌唱一曲");
     }
 }
 ```
