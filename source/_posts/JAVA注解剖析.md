@@ -64,6 +64,6 @@ public class TestAnnotation {
 
 `clz.getDeclaredAnnotation(Foo.class)`这个方法我们debug进去看看，
 
-![C:\Users\ggson\Documents\Hexo\source\_posts\JAVA注解剖析](C:\Users\ggson\Documents\Hexo\source\_posts\JAVA注解剖析\debug.PNG)
+![debug](JAVA注解剖析\debug.PNG)
 
 没错这个获取到的注解对象是个动态代理生成的代理对象来的。再用 `clz.getDeclaredAnnotation(Foo.class).getClass().getInterfaces()`这个方法看看这个对象实现的接口是`interface com.example.demo.annocation.Foo`。最后值得一提的是，RuntimeVisibleAnnotations属性是在动态代理生成这个对象的时候设置到这个代理对象中的。
