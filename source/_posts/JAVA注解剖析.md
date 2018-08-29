@@ -4,9 +4,7 @@ date: 2018-08-27 19:50:14
 tags: JAVA
 ---
 
-**创建一个作用类的注解@Target(ElementType.<span style="color:red">TYPE</span>)**
-
-**并且保留至运行期间@Retention(RetentionPolicy.RUNTIME)**
+**创建一个作用类的注解**
 
 ```java
 @Target(ElementType.TYPE)
@@ -16,9 +14,11 @@ public @interface Foo {
 }
 ```
 
-**创建一个作用于类方法的注解@Target(ElementType.<span style="color:red">METHOD</span>)**
+> **@Target(ElementType.<span style="color:red">TYPE</span>)**表示作用于类
+>
+> **并且保留至运行期间@Retention(RetentionPolicy.RUNTIME)**
 
-**并且保留至运行期间@Retention(RetentionPolicy.RUNTIME)**
+**创建一个作用于类方法的注解**
 
 ```java
 @Target(ElementType.METHOD)
@@ -27,6 +27,12 @@ public @interface FooMethod {
     String value();
 }
 ```
+
+> **@Target(ElementType.<span style="color:red">METHOD</span>)**表示作用于方法
+>
+> **并且保留至运行期间@Retention(RetentionPolicy.RUNTIME)**
+
+
 
 **上面就生成了两个注解，我们来使用它们**
 
